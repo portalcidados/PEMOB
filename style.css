@@ -1,0 +1,203 @@
+body {
+    overflow: hidden;
+}
+
+#app {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10%;
+}
+
+.botao_menu {
+    position: absolute;
+    top: 0px;
+    background-color: #c0002655;
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex
+;
+}
+
+.botao_menu:hover {
+    cursor: pointer;
+}
+
+.botao_menu.clicked {
+    position: absolute;
+    top: 0px;
+    background-color: #c00026
+}
+
+#botao_table {
+    left: 0px;
+}
+
+#botao_graphs {
+    right: 0px;
+}
+
+.tool {
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    width: 100%;
+    height: 90%;
+}
+
+#arvore {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+}
+  
+#sheet {
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    width: 75%;
+    height: 100%;
+    background-color: lightcoral;
+}
+
+#graph {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#distribution {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#slider {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#output {
+    position: absolute;
+    bottom: 40px; /* Um pouco acima do slider */
+    left: 10px;
+    color: gray;
+    font-size: 14px;
+}
+
+#botao_distribution {
+    right: 10px;
+}
+
+#botao_radar {
+    right: 110px;
+}
+
+.botao_grafico {
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #c0002655;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+
+.botao_grafico:hover {
+    cursor: pointer;
+    box-shadow: #414042;
+}
+
+.botao_grafico.clicked {
+    background-color: #c00026;
+}
+
+#Tree {
+    overflow-x: hidden;
+}
+
+a[id^="no_checkbox"] .jstree-checkbox{
+    display: none;
+}
+
+.jstree-anchor {
+    display: inline-table;
+    white-space: normal;
+    padding: 0px 40px 0px 0px;
+    margin: 0;
+    vertical-align: top;
+    font-size: 12px;
+    word-wrap: break-word;
+}
+
+.jstree-default .tema .jstree-icon:empty {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.jstree-default .subtema .jstree-icon:empty {
+    width: 19px;
+    height: 24px;
+    line-height: 19px;
+}
+
+.jstree-anchor.jstree-disabled.tema {
+    font-weight: bold;
+    font-size: 13.5px;
+    color: #414042;
+}
+
+.jstree-anchor.jstree-disabled.subtema {
+    font-size: 12.3px;
+    color: #414042;
+}
+
+a[id^="no_checkbox_"].jstree-hovered.subtema .jstree-icon:empty {
+    width: 22px;
+    height: 24px;
+    line-height: 22px;
+}
+
+a[id^="no_checkbox_"].jstree-anchor.jstree-disabled.jstree-hovered {
+    color: #c00026;
+    font-weight: bold;
+    font-size: 13.5px;
+  }
+
+.jstree-default a[id^="no_checkbox_"].jstree-disabled.jstree-hovered {
+    background: #c0002655;
+}
+
+.jstree-default .jstree-disabled > .jstree-icon {
+    opacity: 1;
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
